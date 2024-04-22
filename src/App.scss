@@ -1,6 +1,6 @@
-@use "./styles/reset";
-@use "./styles/typography";
-@use "./styles/variables" as *;
+@use "./assets/styles/reset";
+@use "./assets/styles/typography";
+@use "./assets/styles/variables" as *;
 
 .app {
     height: 100vh;
@@ -11,4 +11,11 @@
     > * {
       margin-bottom: 1.5rem;
     }
+
+    .app-heading {
+      color: red;
+    }
+
   }
+
+
