@@ -1,38 +1,42 @@
-@use "../../styles/variables" as *;
-
-.beer-cards {
+.beer-card {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: $color-foreground;
+  background-color: red;
   width: 100%;
   max-width: 350px;
   border-radius: 3px;
   overflow: hidden;
   padding: 1rem;
 
-  .employee-card__content {
+  .beer-card__content {
     padding: 1rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
     width: 100%;
     word-break: break-word;
-
-    .employee-card__id {
-      font-size: 1.5rem;
-      font-weight: normal;
-      color: $color-foreground; // block out
-    }
-
-    .employee-card__name {
-        font-size: 1.5rem;
-        font-weight: normal;
-    }
-
-    .employee-card__role {
-      font-size: 1.5rem;
-      font-weight: normal;
-    }
   }
+
+  .beer-card__name {
+      font-size: 1.5rem;
+      font-weight: normal;
+  }
+
+  .beer-card__description {
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+
+  .beer-card__abv {
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+
+  .beer-card__ph{
+      font-size: 1.5rem;
+      font-weight: normal;
+    }
+
+  
 }

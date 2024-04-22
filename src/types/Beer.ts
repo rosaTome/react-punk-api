@@ -1,7 +1,7 @@
 export type Beer = {
     id: number; //
     name: string; //
-    tagline: string; //
+    tagline: string;
     first_brewed: string; 
     description: string; //
     image_url: string; //
@@ -16,7 +16,7 @@ export type Beer = {
     volume: Volume;
     boil_volume: Volume;
     method: Method;
-    ingredients: Ingredients; //
+    ingredients: Ingredients; 
     food_pairing: string[];
     brewers_tips: string;
     contributed_by: string;
