@@ -7,13 +7,20 @@
     overflow-x: hidden;
     background-color: $background-color;
     padding: 2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; 
+    gap: 1rem;
   
     > * {
       margin-bottom: 1.5rem;
     }
 
-    .app-heading {
-      color: red;
+    &-heading {
+      color: $primary-color;
+      grid-column: 2;
+      padding-left: 30px;
+
     }
 
   }
