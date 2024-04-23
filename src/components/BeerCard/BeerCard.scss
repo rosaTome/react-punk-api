@@ -1,15 +1,19 @@
 @use "../../assets/styles/variables" as *;
 
 .beer-card {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background-color: $background-color;
-  width: 100%;
-  max-width: 350px;
+  // display: flex;
+  // flex-direction: column;
+  // align-items: center;
+  // background-color: $background-color;
+  // width: 100%;
+  max-width: 3500px;
+  // padding: 1rem;
+
+  position: relative;
   border-radius: 3px;
   overflow: hidden;
-  padding: 1rem;
+  box-shadow: 0 0.625rem 1.25rem rgba($text-color, 0.25);
+
 
   .beer-card__content {
     padding: 1rem;

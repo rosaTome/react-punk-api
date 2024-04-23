@@ -3,6 +3,7 @@ import BeerCard from "../../components/BeerCard/BeerCard";
 import "./BeerContainer.scss";
 
 type BeerContainerProps = {
+    heading?: string;
     beerCards: Beer[];
 }
 

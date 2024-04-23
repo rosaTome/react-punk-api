@@ -1,0 +1,25 @@
+@use "../../assets/styles/variables" as *;
+
+.search-box {
+  display: flex;
+  flex-direction: column;
+  width: 125px;
+
+  .search-box__label {
+    font-size: 1.25rem;
+  }
+
+  .search-box__input {
+    margin: 1.25rem 0;
+    padding: 0.325rem;
+    font-size: 1.125rem;
+    border: 0.313rem $text-color solid;
+    border-radius: 1rem;
+    color: $text-color;
+
+    &:focus {
+      border: 0.313rem $primary-color solid;
+      outline: none;
+    }
+  }
+}

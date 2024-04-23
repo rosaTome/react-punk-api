@@ -3,6 +3,8 @@ import beers from "./data/beers";
 import "./App.scss"
 import NavContainer from "./containers/NavContainer/NavContainer";
 
+import ExploreBeersContainer from "./containers/ExploreBeersContainer/ExploreBeersContainer";
+
 const App = () => {
   return (
     <div className="app">
@@ -13,6 +15,12 @@ const App = () => {
       <BeerContainer 
       beerCards={beers} 
       />
+
+
+      <ExploreBeersContainer 
+      beers={beers} />
+
+
     </div>
 
 
