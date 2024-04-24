@@ -3,7 +3,6 @@ import beers from "./data/beers";
 import "./App.scss"
 import NavContainer from "./containers/NavContainer/NavContainer";
 import { FormEvent, useState } from "react";
-
 import SearchBox from "./components/SearchBox/SearchBox";
 import "./components/SearchBox/SearchBox.scss"
 
@@ -23,16 +22,17 @@ const App = () => {
 
   return (
     <div className="app">
-
       <nav>
-        <NavContainer
-        />
-
-        <SearchBox
+      <SearchBox
         label="Search Beers"
         handleInput={handleInput}
         searchTerm={searchTerm}
         />
+
+        <NavContainer
+        />
+
+        
       </nav>
 
       <BeerContainer 

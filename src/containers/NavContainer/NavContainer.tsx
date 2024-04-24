@@ -8,9 +8,6 @@ const NavContainer = ({}: NavContainerProps) => {
 
     return (
         <nav className="nav-container">
-        
-            {/* SearchBox */}
-            <p>Search Box:</p>
 
             {/* FiltersList */}
             <p>Filters</p>
