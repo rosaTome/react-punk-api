@@ -15,7 +15,7 @@
   box-shadow: 0 0.625rem 1.25rem rgba($text-color, 0.25);
 
 
-  .beer-card__content {
+  &__content {
     padding: 1rem;
     display: flex;
     flex-direction: column;
@@ -24,22 +24,27 @@
     word-break: break-word;
   }
 
-  .beer-card__name {
+  &__name {
       font-size: 1.5rem;
       font-weight: normal;
   }
 
-  .beer-card__description {
+  &__first_brewed{
+    font-size: 1.5rem;
+    font-weight: normal;
+  }
+
+  &__description {
       font-size: 1.5rem;
       font-weight: normal;
     }
 
-  .beer-card__abv {
+  &__abv {
       font-size: 1.5rem;
       font-weight: normal;
     }
 
-  .beer-card__ph{
+  &__ph{
       font-size: 1.5rem;
       font-weight: normal;
     }

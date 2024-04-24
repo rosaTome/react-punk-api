@@ -16,6 +16,7 @@ const BeerContainer = ({ beerCards }: BeerContainerProps) => {
                     key={beerCard.id}
                     image={beerCard.image_url}
                     name={beerCard.name}
+                    first_brewed={beerCard.first_brewed}
                     description={beerCard.description}
                     abv={beerCard.abv}
                     ph={beerCard.ph}

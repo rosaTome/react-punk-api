@@ -6,6 +6,7 @@ import { FormEvent, useState } from "react";
 import SearchBox from "./components/SearchBox/SearchBox";
 import "./components/SearchBox/SearchBox.scss"
 
+
 const App = () => {
 
   const [searchTerm, setSearchTerm] = useState<string>("");
