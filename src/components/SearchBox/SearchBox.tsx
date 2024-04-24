@@ -9,12 +9,9 @@ type SearchBoxProps = {
 
 export const SearchBox = ({ label, searchTerm, handleInput}: SearchBoxProps)  => {
 
-    const capitaliseLabel = label[0].toUpperCase()
-
     return (
         <div className="search-box">
-        <label htmlFor={label} className="search-box__label">
-            {capitaliseLabel}
+        <label htmlFor={label} className="search-box__label">Search Box
         </label>
         <input
             className="search-box__input"

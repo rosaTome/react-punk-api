@@ -1,38 +1,27 @@
-import { ChangeEventHandler } from "react";
 import "./FiltersList.scss"
 
 type FiltersListProps = {
-    onChange: ChangeEventHandler<HTMLInputElement>;
+    label: string;
     selected: string;
     options: string[];
-    label: string;
+    onChange: (selected: string) => void;
 }
 
-const FiltersList = ({onChange, selected, options, label}: FiltersListProps) => {
+const FiltersList = ({ label, selected, options, onChange}: FiltersListProps) => {
 
     return (
         <div className="filters-list">
             <p>{label}</p>
-            {options.map((option, index) => {
-                const optionLower = option.toLowerCase();
-                const optionCapitalised = 
-                optionLower[0].toUpperCase() + optionLower.slice(1);
+            {options.map((option) => {
+                const isActive = option === selected;
                 return (
-                    <div key={"filters-list" + option + index}>
-                        <input 
-                        type="text"
-                        name="gender"
-                        id={optionLower}
-                        value={optionLower}
-                        checked={optionLower === selected.toLowerCase()}
-                        onChange={onChange}
-                        />
-                        <label 
-                        className="filters-list__label"
-                        htmlFor={optionLower}>
-                            {optionCapitalised}
-                        </label>
-                    </div>
+                <button
+                    key={option}
+                    className={isActive ? "active" : ""}
+                    onClick={() => onChange(option)}
+                >
+                    {option}
+                </button>
                 );
             })}
         </div>
