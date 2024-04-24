@@ -7,9 +7,9 @@ type SearchBoxProps = {
     handleInput: FormEventHandler<HTMLInputElement>;
 }
 
-const SearchBox = ({ label, searchTerm, handleInput}: SearchBoxProps)  => {
+export const SearchBox = ({ label, searchTerm, handleInput}: SearchBoxProps)  => {
 
-    const capitaliseLabel = label[0].toUpperCase() + label.slice(1);
+    const capitaliseLabel = label[0].toUpperCase()
 
     return (
         <div className="search-box">
@@ -29,4 +29,3 @@ const SearchBox = ({ label, searchTerm, handleInput}: SearchBoxProps)  => {
 };
 
 export default SearchBox;
-

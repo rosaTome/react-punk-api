@@ -1,41 +1,23 @@
-import { FormEvent, useState } from "react";
-import SearchBox from "../../components/SearchBox/SearchBox";
-import Beer from "../../types/Beer";
+// import { FormEvent, useState } from "react";
+// import SearchBox from "../../components/SearchBox/SearchBox";
+// import Beer from "../../types/Beer";
 
-import BeerContainer from "../BeerContainer/BeerContainer";
+// import BeerContainer from "../BeerContainer/BeerContainer";
 
-type ExploreBeersContainerProps = {
-    beers: Beer[];
-}
+// type ExploreBeersContainerProps = {
+//     beers: Beer[];
+// }
 
-const ExploreBeersContainer = ({ beers }: ExploreBeersContainerProps ) => {
-    const [searchTerm, setSearchTerm] = useState<string>("");
+// const ExploreBeersContainer = ({ beers }: ExploreBeersContainerProps ) => {
   
-    const handleInput = (event: FormEvent<HTMLInputElement>) => {
-      const cleanInput = event.currentTarget.value.toLowerCase();
-      setSearchTerm(cleanInput);
-    };
   
-    const filteredBeers = beers.filter((beer) =>
-      beer.name.toLowerCase().includes(searchTerm)
-    );
-  
-    return (
-      <>
-        <SearchBox
-          label="Search Beers"
-          handleInput={handleInput}
-          searchTerm={searchTerm}
-        />
+//     return (
+//       <>
+       
 
-        <BeerContainer
-          heading="Results" 
-          beerCards={filteredBeers}
-        />
-
-      </>
-    );
-  };
+//       </>
+//     );
+//   };
   
-  export default ExploreBeersContainer;
+//   export default ExploreBeersContainer;
 

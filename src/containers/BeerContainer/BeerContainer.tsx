@@ -8,6 +8,7 @@ type BeerContainerProps = {
 }
 
 const BeerContainer = ({ beerCards }: BeerContainerProps) => {
+
     return (
         <div className="beer-container">
             {beerCards.map((beerCard) => 
@@ -25,4 +26,4 @@ const BeerContainer = ({ beerCards }: BeerContainerProps) => {
     );
 };
 
-export default BeerContainer
+export default BeerContainer;
