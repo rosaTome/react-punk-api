@@ -1,5 +1,4 @@
 import { useState, FormEvent, useEffect } from "react";
-// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BeerContainer from "./containers/BeerContainer/BeerContainer";
 import "./App.scss"
 import SearchBox from "./components/SearchBox/SearchBox";
@@ -113,6 +112,8 @@ const App = () => {
         />
 
       </nav>
+
+      <h1 className="title">Welcome to Beer O'clock!</h1>
 
       <BeerContainer 
       beerCards={filteredBeers} 
