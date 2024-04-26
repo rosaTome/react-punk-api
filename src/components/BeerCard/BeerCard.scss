@@ -1,53 +1,37 @@
 @use "../../assets/styles/variables" as *;
 
 .beer-card {
-  // display: flex;
-  // flex-direction: column;
-  // align-items: center;
-  // background-color: $background-color;
-  // width: 100%;
-  max-width: 3500px;
-  // padding: 1rem;
-
+  max-width: 350px; /* Adjust max-width as needed */
   position: relative;
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 0.625rem 1.25rem rgba($text-color, 0.25);
+}
 
+.beer-card__content {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
 
-  &__content {
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    gap: 0.5rem;
-    width: 100%;
-    word-break: break-word;
-  }
+.beer-card__name {
+  font-size: 1.5rem;
+  font-weight: bold; /* Increase font weight for better readability */
+}
 
-  &__name {
-      font-size: 1.5rem;
-      font-weight: normal;
-  }
+.beer-card__first_brewed {
+  font-size: 1.2rem; /* Decrease font size for secondary information */
+  font-weight: normal;
+}
 
-  &__first_brewed{
-    font-size: 1.5rem;
-    font-weight: normal;
-  }
+.beer-card__description {
+  font-size: 1rem; /* Decrease font size for description */
+  font-weight: normal;
+}
 
-  &__description {
-      font-size: 1.5rem;
-      font-weight: normal;
-    }
-
-  &__abv {
-      font-size: 1.5rem;
-      font-weight: normal;
-    }
-
-  &__ph{
-      font-size: 1.5rem;
-      font-weight: normal;
-    }
-
-  
+.beer-card__abv,
+.beer-card__ph {
+  font-size: 1.2rem; /* Decrease font size for secondary information */
+  font-weight: normal;
 }

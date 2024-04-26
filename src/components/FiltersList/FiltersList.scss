@@ -1,10 +1,29 @@
 .filters-list {
   display: flex;
   flex-wrap: wrap;
-  &__label {
-    margin-left: 5px;
+
+  p {
     margin-right: 10px;
     font-size: 1.25rem;
   }
+
+  button {
+    margin: 5px 10px; /* Adjust margin for spacing between items */
+    font-size: 1rem;
+    padding: 0.5rem 1rem; /* Adjust padding for button size */
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &.active {
+      background-color: orange; /* Add a background color for active items */
+      color: white; /* Change text color for active items */
+    }
+
+    &:hover:not(.active) {
+      background-color: red; /* Add a background color on hover */
+    }
+  }
 }
-  
