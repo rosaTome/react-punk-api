@@ -114,6 +114,8 @@ const App = () => {
 
       </nav>
 
+      <h1 className="title">Welcome to Beer O'clock!</h1>
+
       <BeerContainer 
       beerCards={filteredBeers} 
       />
