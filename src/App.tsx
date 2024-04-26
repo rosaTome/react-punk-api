@@ -1,4 +1,5 @@
 import { useState, FormEvent, useEffect } from "react";
+// import { BrowserRouter, Routes, Route } from "react-router-dom";
 import BeerContainer from "./containers/BeerContainer/BeerContainer";
 import "./App.scss"
 import SearchBox from "./components/SearchBox/SearchBox";
@@ -10,7 +11,6 @@ import Button from "./components/Button/Button";
 const App = () => {
 
   const [beers, setBeers] = useState<Beer[]>([]);  
-  
   const [filteredBeers, setFilteredBeers] = useState<Beer[]>([]);
 
 
@@ -91,7 +91,7 @@ const App = () => {
 
         <Button 
         onClick={getBeers} 
-        label="Get Random Beer"
+        label="Generate Beers"
         />
 
 

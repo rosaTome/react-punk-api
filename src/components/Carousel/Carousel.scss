@@ -1,0 +1,69 @@
+@use "../../assets/styles/variables" as *;
+
+.carousel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3.125rem;
+  background-color: $color-secondary;
+
+  .carousel__image {
+    box-shadow: 0 0.625rem 1.25rem rgba($color-black, 0.25);
+    width: 80%;
+    border-radius: 1rem;
+  }
+
+  .carousel__arrow {
+    height: 1.875rem;
+    appearance: none;
+    background-color: unset;
+    border: none;
+    padding: 0;
+
+    & > * {
+      height: 100%;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .carousel {
+    position: relative;
+    flex-grow: 1;
+    padding: 0;
+    background-color: unset;
+
+    .carousel__image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .carousel__arrow {
+      position: absolute;
+      bottom: 1.25rem;
+      background-color: rgba($color-white, 0.4);
+      box-shadow: 0 0.625rem 1.25rem rgba($color-black, 0.6);
+      padding: 1.25rem;
+      border-radius: 1rem;
+      width: 3.5rem;
+      height: 4.375rem;
+
+      &:hover {
+        background-color: rgba($color-white, 0.8);
+      }
+
+      &.carousel__arrow--left {
+        left: 1.25rem;
+      }
+
+      &.carousel__arrow--right {
+        right: 1.25rem;
+      }
+    }
+  }
+}
