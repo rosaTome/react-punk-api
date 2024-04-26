@@ -1,19 +1,16 @@
-import "./NavContainer.scss"
+// import "./NavContainer.scss"
 
-type NavContainerProps = {
+// type NavContainerProps = {
 
-}
+// }
 
-const NavContainer = ({}: NavContainerProps) => {
+// const NavContainer = ({}: NavContainerProps) => {
 
-    return (
-        <nav className="nav-container">
+//     return (
+//         <nav className="nav-container">
 
-            {/* FiltersList */}
-            <p>Filters</p>
+//         </nav>
+//     )
+// }
 
-        </nav>
-    )
-}
-
-export default NavContainer;
+// export default NavContainer;

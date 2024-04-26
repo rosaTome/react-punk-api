@@ -1,11 +1,11 @@
-@use "../../assets/styles/_variables.scss" as *;
+// @use "../../assets/styles/_variables.scss" as *;
 
-.nav-container {
-  display: grid;
-  grid-column: 1;
-  width: 20vw;
-  height: auto;
-  place-content: center;
-  grid-template-rows: repeat(100,1fr);
-  background-color: $background-color;
-}
+// .nav-container {
+//   display: grid;
+//   grid-column: 1;
+//   width: 20vw;
+//   height: auto;
+//   place-content: center;
+//   grid-template-rows: repeat(100,1fr);
+//   background-color: $background-color;
+// }
